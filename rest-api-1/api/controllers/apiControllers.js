@@ -5,7 +5,9 @@ var tasks = { 'items':
    {'id':2, 'desc':'task2'}
  ]
 }
-
+exports.ping = function(req,res){
+  res.send("app1")
+}
 exports.list = function(req,res){
   res.json(tasks);
 };
