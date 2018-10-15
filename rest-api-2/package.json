@@ -1,5 +1,5 @@
 {
-  "name": "rest-api-1",
+  "name": "rest-api-2",
   "version": "1.0.0",
   "description": "Rest API application",
   "main": "index.js",
@@ -9,6 +9,12 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": { "express" : "4.16.04",
+                    "request" : "2.88.0"},
+  "devDependencies": {},
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/davidfrigola/poc-test-mock.git"
+  }
+
 }
