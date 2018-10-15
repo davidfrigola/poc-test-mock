@@ -6,6 +6,11 @@ Given(/^the application1 is up$/) do
   assert_equal 200,response.code
 end
 
+Given(/^the application2 is up$/) do
+  response = HTTParty.get('http://localhost:3001/api')
+  assert_equal 200,response.code
+end
+
 When(/^I get the list$/) do
   @last_response = HTTParty.get('http://localhost:3000/api/list')
 end
