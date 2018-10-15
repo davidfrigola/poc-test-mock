@@ -4,8 +4,7 @@ module.exports = function(app) {
 
   // app Routes
   app.route('/api')
-    .get(controllers.list)
-    .post(controllers.add);
+    .get(controllers.list);
   app.route('/api/:id')
     .get(controllers.read);
 
