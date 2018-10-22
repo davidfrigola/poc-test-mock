@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  app1:
+    build:
+      context: ./rest-api-1
+      dockerfile: docker/Dockerfile
+    ports:
+      - 3000:3000
+  app2:
+    build:
+      context: ./rest-api-2
+      dockerfile: docker/Dockerfile
+    ports:
+      - 3001:3000
