@@ -1,5 +1,7 @@
 var request = require('request');
 
+// TODO Should get url from configuration instead of hardcoded
+
 exports.ping = function(req,res){
   res.send("app2")
 }
