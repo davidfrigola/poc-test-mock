@@ -1,10 +1,7 @@
 # poc-test-mock
 Testing mock approach on testing
 
-## Task status
-
-[![Waffle.io - Columns and their card count](https://badge.waffle.io/davidfrigola/poc-test-mock.svg?columns=all)](https://waffle.io/davidfrigola/poc-test-mock)
-
+[![Build Status](https://travis-ci.org/davidfrigola/poc-test-mock.svg?branch=master)](https://travis-ci.org/davidfrigola/poc-test-mock)
 
 # Start applications locally
 
@@ -20,11 +17,3 @@ From `./rest-api-2` use `PORT=3001 npm start`
 Install ATs dependencies using `bundle install`
 
 Launch ATs locally from `./acceptance` using `sh cuke.sh`
-
-# Using containers
-
-This requires docker and docker-compose
-
-Use `docker-compose build app1 app2` to generate both application containers
-
-Use `docker-compose up -d` to start both application containers
