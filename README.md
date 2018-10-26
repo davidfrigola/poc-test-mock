@@ -1,6 +1,11 @@
 # poc-test-mock
 Testing mock approach on testing
 
+## Task status
+
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/davidfrigola/poc-test-mock.svg?columns=all)](https://waffle.io/davidfrigola/poc-test-mock)
+
+
 # Start applications locally
 
 ## Application1
