@@ -2,6 +2,7 @@
 Testing mock approach on testing
 
 [![Build Status](https://travis-ci.org/davidfrigola/poc-test-mock.svg?branch=master)](https://travis-ci.org/davidfrigola/poc-test-mock)
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/davidfrigola/poc-test-mock.svg?columns=all)](https://waffle.io/davidfrigola/poc-test-mock)
 
 # Start applications locally
 
