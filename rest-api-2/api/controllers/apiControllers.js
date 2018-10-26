@@ -1,12 +1,11 @@
 var request = require('request');
-
-// TODO Should get url from configuration instead of hardcoded
+var APP_URL = process.env.APP || 'http://localhost:3000'
 
 exports.ping = function(req,res){
   res.send("app2")
 }
 exports.list = function(req,res){
-  request('http://app1:3000/api/list', function (error, response, body) {
+  request(APP_URL+'/api/list', function (error, response, body) {
     if(body) {
       res.json(JSON.parse(body));
     }else{
@@ -16,7 +15,7 @@ exports.list = function(req,res){
 };
 
 exports.read = function(req,res){
-  request('http://app1:3000/api/'+req.params.id, function (error, response, body) {
+  request(APP_URL+':3000/api/'+req.params.id, function (error, response, body) {
     res.status(response.statusCode)
     if(body) {
       res.json(JSON.parse(body));
