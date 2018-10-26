@@ -22,4 +22,4 @@ This requires docker and docker-compose
 
 Use `docker-compose build app1 app2` to generate both application containers
 
-Use `docker-compose up -d app1 app2` to start both application containers
+Use `docker-compose up -d` to start both application containers
