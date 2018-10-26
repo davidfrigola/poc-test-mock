@@ -11,5 +11,5 @@ before_install:
 
 script:
   - cd acceptance
+  - bundle install
   - sh cuke.sh
-  
