@@ -13,3 +13,10 @@ script:
   - cd acceptance
   - bundle install
   - sh cuke.sh
+  - echo "Use mock for testing"
+  - docker-compose stop app1
+  - cd simple-mock-api-1
+  - sh fetch_wiremock.sh
+  - sh start.sh &
+  - cd ..
+  - sh cuke.sh
