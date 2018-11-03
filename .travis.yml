@@ -22,3 +22,4 @@ script:
   - sleep 5 && curl 'http://localhost:3000/api'
   - cd ../../acceptance
   - sh cuke.sh
+  - sh ../mock/wiremock/stop.sh
