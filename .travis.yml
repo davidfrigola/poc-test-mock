@@ -15,6 +15,7 @@ script:
   - sh cuke.sh
   - echo "Use mock for testing"
   - docker-compose stop app1
+  - cd ..
   - cd simple-mock-api-1
   - sh fetch_wiremock.sh
   - sh start.sh &
