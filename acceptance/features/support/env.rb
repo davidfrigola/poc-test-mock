@@ -1,11 +1,11 @@
 require 'httparty'
 require 'service_mock'
 
-@wiremock_server = ServiceMock::Server.new('standalone-2.19.0','../mock/wiremock')
 
 def start_wiremock(mappings_folder)
   unless mappings_folder == 'none'
     puts "Mock mappings folder : "+mappings_folder
+    @wiremock_server = ServiceMock::Server.new('standalone-2.19.0','../mock/wiremock')
     @wiremock_server.start do |server|
       server.port = 3000
       server.verbose = true
@@ -24,7 +24,7 @@ start_wiremock(mock_strategy)
 
 
 at_exit do
-
-  @wiremock_server.stop
-
+  unless mock_strategy == 'none'
+   @wiremock_server.stop
+  end
 end
