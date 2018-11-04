@@ -19,5 +19,5 @@ script:
   - cd mock/wiremock
   - sh fetch_wiremock.sh
   - cd ../../acceptance
-  - sh cuke.sh
+  - sh cuke.sh strategy=simple
   - sh ../mock/wiremock/stop.sh
