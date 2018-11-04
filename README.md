@@ -18,3 +18,24 @@ From `./rest-api-2` use `PORT=3001 npm start`
 Install ATs dependencies using `bundle install`
 
 Launch ATs locally from `./acceptance` using `sh cuke.sh`
+
+# Mocks
+
+## Wiremock
+
+A script is provided to download wiremock standalone JAR. The JAR will be used for all defined strategies
+
+### Simple
+
+Provides a set of mappings under `/mock/wiremock/simple`
+This is a "big-bang" strategy, setting all required mocks before starting the ATs.
+
+
+### Empty
+
+Provides an empty set of mappings (only `/api` provided) so can be used in an ATs strategy providing mocks for each scenario.
+
+
+## TODO
+
+Other mock frameworks and strategies TBD

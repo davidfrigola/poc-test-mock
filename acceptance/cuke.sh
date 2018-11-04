@@ -1,1 +1,1 @@
-bundler exec cucumber
+bundle exec cucumber $@

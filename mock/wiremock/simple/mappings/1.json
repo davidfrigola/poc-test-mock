@@ -1,13 +1,13 @@
 {
     "request": {
         "method": "GET",
-        "url": "/api/2"
+        "url": "/api/1"
     },
     "response": {
         "status": 200,
         "headers": {
           "Content-Type": "application/json"
         },
-        "body": "{ 'id': 2 }"
+        "body": "{ 'id': 1 }"
     }
 }
